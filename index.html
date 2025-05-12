@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Color Picker</title>
+</head>
+
+<body>
+    <main>
+        <div class="grid-container">
+            <form class="form" id="color-picker-form">
+                <label for="color"></label>
+                <input type="color" class="color-input" id="color-input" />
+                <label for="color-scheme"></label>
+                <select id="color-scheme" name="color-scheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button type="submit" class="submit-btn">Get Color Scheme</button>
+            </form>
+            <div class="col-container" id="col-container">
+                <div class="col">
+                    <div class="col-color"></div>
+                    <p class="color-text">#FFFFFF</p>
+                </div>
+                <div class="col">
+                    <div class="col-color"></div>
+                    <p class="color-text">#FFFFFF</p>
+                </div>
+                <div class="col">
+                    <div class="col-color"></div>
+                    <p class="color-text">#FFFFFF</p>
+                </div>
+                <div class="col">
+                    <div class="col-color"></div>
+                    <p class="color-text">#FFFFFF</p>
+                </div>
+                <div class="col">
+                    <div class="col-color"></div>
+                    <p class="color-text">#FFFFFF</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
